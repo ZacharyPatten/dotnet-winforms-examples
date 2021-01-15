@@ -31,5 +31,14 @@ namespace dotnet_winforms_examples
 			form.Controls.Add(slidePuzzleControl);
 			form.Show();
 		}
+
+		private void fadeInFadeOutExampleButton_Click(object sender, EventArgs e)
+		{
+			Form form = new Form();
+			FadeInFadeOutControl fadeInFadeOutControl = new FadeInFadeOutControl();
+			fadeInFadeOutControl.Dock = DockStyle.Fill;
+			form.Controls.Add(fadeInFadeOutControl);
+			form.Show();
+		}
 	}
 }
