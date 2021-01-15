@@ -137,7 +137,7 @@ namespace dotnet_winforms_examples
 			TimeSpan animationTime = TimeSpan.FromMilliseconds(500);
 			DateTime start = DateTime.Now;
 			Timer timer = new Timer();
-			timer.Interval = 16;
+			timer.Interval = 1;
 			timer.Tick += (_, _) =>
 			{
 				if (DateTime.Now - start > animationTime)
@@ -148,25 +148,24 @@ namespace dotnet_winforms_examples
 				}
 				else
 				{
-					// still some view bug in these calculations
 					int tileWidth = Width / Tiles.GetLength(0);
 					int tileHeight = Height / Tiles.GetLength(1);
 					double ratio = (DateTime.Now - start) / animationTime;
 					if (targetLocation.Value.Row > tileLocation.Row)
 					{
-						tile.Top = Math.Min((int)(tileLocation.Row * tileWidth + ratio * tileWidth), targetLocation.Value.Row * tileHeight);
+						tile.Top = Math.Min((int)(tileLocation.Row * tileHeight + ratio * tileHeight), targetLocation.Value.Row * tileHeight);
 					}
 					if (targetLocation.Value.Column > tileLocation.Column)
 					{
-						tile.Left = Math.Min((int)(tileLocation.Column * tileHeight + ratio * tileHeight), targetLocation.Value.Column * tileWidth);
+						tile.Left = Math.Min((int)(tileLocation.Column * tileWidth + ratio * tileWidth), targetLocation.Value.Column * tileWidth);
 					}
 					if (targetLocation.Value.Row < tileLocation.Row)
 					{
-						tile.Top = Math.Max((int)(tileLocation.Row * tileWidth - ratio * tileWidth), targetLocation.Value.Row * tileHeight);
+						tile.Top = Math.Max((int)(tileLocation.Row * tileHeight - ratio * tileHeight), targetLocation.Value.Row * tileHeight);
 					}
 					if (targetLocation.Value.Column < tileLocation.Column)
 					{
-						tile.Left = Math.Max((int)(tileLocation.Column * tileHeight - ratio * tileHeight), targetLocation.Value.Column * tileWidth);
+						tile.Left = Math.Max((int)(tileLocation.Column * tileWidth - ratio * tileWidth), targetLocation.Value.Column * tileWidth);
 					}
 					tile.Refresh();
 				}
