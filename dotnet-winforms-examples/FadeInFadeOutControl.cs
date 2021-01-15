@@ -22,6 +22,9 @@ namespace dotnet_winforms_examples
 
 		private void label_Click(object sender, EventArgs e)
 		{
+			// Note: I should be using a Timer here instead of locking the UI thread, but this was
+			// just to demonstrate fade-in-fade-out, not using timers.
+
 			DateTime start = DateTime.Now;
 			TimeSpan duration = TimeSpan.FromSeconds(1);
 			TimeSpan interpolation;
