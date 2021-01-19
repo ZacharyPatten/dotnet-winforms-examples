@@ -40,5 +40,14 @@ namespace dotnet_winforms_examples
 			form.Controls.Add(fadeInFadeOutControl);
 			form.Show();
 		}
+
+		private void collisionExampleButton_Click(object sender, EventArgs e)
+		{
+			Form form = new Form();
+			CollisionDetectionExampleControl collisionDetectionExampleControl = new CollisionDetectionExampleControl();
+			collisionDetectionExampleControl.Dock = DockStyle.Fill;
+			form.Controls.Add(collisionDetectionExampleControl);
+			form.Show();
+		}
 	}
 }

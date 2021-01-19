@@ -33,6 +33,7 @@ namespace dotnet_winforms_examples
 			this.label1 = new System.Windows.Forms.Label();
 			this.sliderPuzzleExampleButton = new System.Windows.Forms.Button();
 			this.fadeInFadeOutExampleButton = new System.Windows.Forms.Button();
+			this.collisionExampleButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// resizeableBorderlessFormExampleButton
@@ -74,11 +75,22 @@ namespace dotnet_winforms_examples
 			this.fadeInFadeOutExampleButton.UseVisualStyleBackColor = true;
 			this.fadeInFadeOutExampleButton.Click += new System.EventHandler(this.fadeInFadeOutExampleButton_Click);
 			// 
+			// collisionExampleButton
+			// 
+			this.collisionExampleButton.Location = new System.Drawing.Point(12, 114);
+			this.collisionExampleButton.Name = "collisionExampleButton";
+			this.collisionExampleButton.Size = new System.Drawing.Size(234, 23);
+			this.collisionExampleButton.TabIndex = 4;
+			this.collisionExampleButton.Text = "2D Collision Example";
+			this.collisionExampleButton.UseVisualStyleBackColor = true;
+			this.collisionExampleButton.Click += new System.EventHandler(this.collisionExampleButton_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.collisionExampleButton);
 			this.Controls.Add(this.fadeInFadeOutExampleButton);
 			this.Controls.Add(this.sliderPuzzleExampleButton);
 			this.Controls.Add(this.label1);
@@ -96,6 +108,7 @@ namespace dotnet_winforms_examples
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button sliderPuzzleExampleButton;
 		private System.Windows.Forms.Button fadeInFadeOutExampleButton;
+		private System.Windows.Forms.Button collisionExampleButton;
 	}
 }
 
