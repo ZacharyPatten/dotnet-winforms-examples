@@ -26,7 +26,7 @@ namespace dotnet_winforms_examples
 			{
 				indeces[i] = i + 1;
 			}
-			Random random = new Random();
+			Random random = new();
 			for (int i = 0; i < indeces.Length; i++)
 			{
 				int b = random.Next(indeces.Length);
@@ -136,7 +136,7 @@ namespace dotnet_winforms_examples
 			Panel tile = (Panel)sender;
 			TimeSpan animationTime = TimeSpan.FromMilliseconds(500);
 			DateTime start = DateTime.Now;
-			Timer timer = new Timer();
+			Timer timer = new();
 			timer.Interval = 1;
 			timer.Tick += (_, _) =>
 			{

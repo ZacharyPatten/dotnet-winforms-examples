@@ -25,8 +25,8 @@ namespace dotnet_winforms_examples
 
 		private void sliderPuzzleExampleButton_Click(object sender, EventArgs e)
 		{
-			Form form = new Form();
-			SlidePuzzleControl slidePuzzleControl = new SlidePuzzleControl();
+			Form form = new();
+			SlidePuzzleControl slidePuzzleControl = new();
 			slidePuzzleControl.Dock = DockStyle.Fill;
 			form.Controls.Add(slidePuzzleControl);
 			form.Show();
@@ -34,8 +34,8 @@ namespace dotnet_winforms_examples
 
 		private void fadeInFadeOutExampleButton_Click(object sender, EventArgs e)
 		{
-			Form form = new Form();
-			FadeInFadeOutControl fadeInFadeOutControl = new FadeInFadeOutControl();
+			Form form = new();
+			FadeInFadeOutControl fadeInFadeOutControl = new();
 			fadeInFadeOutControl.Dock = DockStyle.Fill;
 			form.Controls.Add(fadeInFadeOutControl);
 			form.Show();
@@ -43,10 +43,19 @@ namespace dotnet_winforms_examples
 
 		private void collisionExampleButton_Click(object sender, EventArgs e)
 		{
-			Form form = new Form();
-			CollisionDetectionExampleControl collisionDetectionExampleControl = new CollisionDetectionExampleControl();
+			Form form = new();
+			CollisionDetectionExampleControl collisionDetectionExampleControl = new();
 			collisionDetectionExampleControl.Dock = DockStyle.Fill;
 			form.Controls.Add(collisionDetectionExampleControl);
+			form.Show();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			Form form = new();
+			RoundButtonExamplesUserControl roundButtonExamplesUserControl = new();
+			roundButtonExamplesUserControl.Dock = DockStyle.Fill;
+			form.Controls.Add(roundButtonExamplesUserControl);
 			form.Show();
 		}
 	}

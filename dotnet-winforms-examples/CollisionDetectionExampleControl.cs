@@ -13,7 +13,7 @@ namespace dotnet_winforms_examples
 		public CollisionDetectionExampleControl()
 		{
 			InitializeComponent();
-			Random random = new Random();
+			Random random = new();
 			Circle NewCircle((int, int) center, int radius)
 			{
 				float ratio = (float)random.NextDouble();
@@ -32,7 +32,7 @@ namespace dotnet_winforms_examples
 			Controls.Add(NewCircle((200, 200), 50));
 			Controls.Add(NewCircle((050, 200), 50));
 			Controls.Add(NewCircle((200, 050), 50));
-			Timer timer = new Timer();
+			Timer timer = new();
 			DateTime previous = DateTime.Now;
 			Graphics graphics = CreateGraphics();
 			timer.Tick += (_, _) =>
