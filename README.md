@@ -23,6 +23,7 @@
 - 2D Circle Collision Detection Example
 - Round Buttons
 - Navigation Bar
+- Transparent Screen Selector
 
 ## Getting Started
 
