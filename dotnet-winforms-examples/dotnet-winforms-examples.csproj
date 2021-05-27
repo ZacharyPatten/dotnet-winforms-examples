@@ -6,9 +6,6 @@
 		<UseWindowsForms>true</UseWindowsForms>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Form1.Designer.cs~RF23d160d7.TMP" />
-	</ItemGroup>
-	<ItemGroup>
 		<Compile Update="Properties\Resources.Designer.cs">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
