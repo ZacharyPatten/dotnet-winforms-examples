@@ -23,6 +23,8 @@ namespace dotnet_winforms_examples
 		bool VerticalResizing;
 		bool HorizontalResizing;
 		(int X, int Y) ResizingMouseOrigin;
+		bool ResizeInvertHorizontal;
+		bool ResizeInvertVertical;
 
 		private void Resize_MouseDown(object sender, MouseEventArgs e)
 		{
@@ -31,8 +33,29 @@ namespace dotnet_winforms_examples
 				Resizing = true;
 				((Control)sender).Capture = true;
 				ResizingMouseOrigin = (e.X, e.Y);
-				VerticalResizing = sender == resizePanel || sender == verticalResizePanel;
-				HorizontalResizing = sender == resizePanel || sender == horizontalResizePanel;
+				VerticalResizing =
+					sender == resizeTopLeftPanel ||
+					sender == resizeBottomLeftPanel ||
+					sender == resizeTopRightPanel ||
+					sender == resizeBottomRightPanel ||
+					sender == verticalResizeTopPanel ||
+					sender == verticalResizeBottomPanel;
+				HorizontalResizing =
+					sender == resizeTopLeftPanel ||
+					sender == resizeBottomLeftPanel ||
+					sender == resizeTopRightPanel ||
+					sender == resizeBottomRightPanel ||
+					sender == horizontalResizeLeftPanel ||
+					sender == horizontalResizeRightPanel;
+				ResizeInvertHorizontal =
+					sender == horizontalResizeLeftPanel ||
+					sender == resizeTopLeftPanel ||
+					sender == resizeBottomLeftPanel;
+				ResizeInvertVertical =
+					sender == verticalResizeTopPanel ||
+					sender == resizeTopLeftPanel ||
+					sender == resizeTopRightPanel;
+
 			}
 		}
 
@@ -53,11 +76,27 @@ namespace dotnet_winforms_examples
 				{
 					if (HorizontalResizing)
 					{
-						Width += e.X - ResizingMouseOrigin.X;
+						if (ResizeInvertHorizontal)
+						{
+							Width -= e.X - ResizingMouseOrigin.X;
+							Left += e.X - ResizingMouseOrigin.X;
+						}
+						else
+						{
+							Width += e.X - ResizingMouseOrigin.X;
+						}
 					}
 					if (VerticalResizing)
 					{
-						Height += e.Y - ResizingMouseOrigin.Y;
+						if (ResizeInvertVertical)
+						{
+							Height -= e.Y - ResizingMouseOrigin.Y;
+							Top += e.Y - ResizingMouseOrigin.Y;
+						}
+						else
+						{
+							Height += e.Y - ResizingMouseOrigin.Y;
+						}
 					}
 				}
 			}
@@ -80,7 +119,7 @@ namespace dotnet_winforms_examples
 			if (WindowState is FormWindowState.Normal)
 			{
 				Moving = true;
-				movePanel.Capture = true;
+				((Control)sender).Capture = true;
 				MovingMouseOrigin = (e.X, e.Y);
 			}
 		}
@@ -90,7 +129,7 @@ namespace dotnet_winforms_examples
 			if (WindowState is FormWindowState.Normal)
 			{
 				Moving = false;
-				movePanel.Capture = false;
+				((Control)sender).Capture = false;
 			}
 		}
 
@@ -107,7 +146,7 @@ namespace dotnet_winforms_examples
 			else
 			{
 				Moving = false;
-				movePanel.Capture = false;
+				((Control)sender).Capture = false;
 			}
 		}
 
