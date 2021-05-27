@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dotnet_winforms_examples
@@ -55,10 +50,10 @@ namespace dotnet_winforms_examples
 					Controls.Add(panel);
 				}
 			}
-			Layout();
+			CustomLayout();
 		}
 
-		public void Layout()
+		public void CustomLayout()
 		{
 			int tileWidth = Width / Tiles.GetLength(0);
 			int tileHeight = Height / Tiles.GetLength(1);
@@ -85,10 +80,10 @@ namespace dotnet_winforms_examples
 
 		private void SlidePuzzleControl_Resize(object sender, EventArgs e)
 		{
-			Layout();
+			CustomLayout();
 		}
 
-		private Color GetRandomColor(Random random = null)
+		private static Color GetRandomColor(Random random = null)
 		{
 			random ??= new();
 			return Color.FromArgb(
@@ -142,7 +137,7 @@ namespace dotnet_winforms_examples
 			{
 				if (DateTime.Now - start > animationTime)
 				{
-					Layout();
+					CustomLayout();
 					timer.Enabled = false;
 					Animating = false;
 				}

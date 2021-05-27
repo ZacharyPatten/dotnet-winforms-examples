@@ -1,11 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dotnet_winforms_examples
 {
-	public partial class ResizeableBorderlessForm : Form
+	public partial class TransparentScreenSelectorForm : Form
 	{
-		public ResizeableBorderlessForm()
+		public TransparentScreenSelectorForm()
 		{
 			InitializeComponent();
 		}
@@ -106,33 +113,16 @@ namespace dotnet_winforms_examples
 
 		#endregion
 
-		private void ClosePanel_Click(object sender, EventArgs e)
+		private void ScreenSelectorForm_Paint(object sender, PaintEventArgs e)
+		{
+			SolidBrush solidBrush = new(Color.Blue);
+			Pen pen = new(solidBrush, 5);
+			e.Graphics.DrawRectangle(pen, 0, 0, Width, Height);
+		}
+
+		private void Button1_Click(object sender, EventArgs e)
 		{
 			Close();
-		}
-
-		private void MaximizePanel_Click(object sender, EventArgs e)
-		{
-			if (WindowState is FormWindowState.Normal)
-			{
-				WindowState = FormWindowState.Maximized;
-			}
-			else if (WindowState is FormWindowState.Maximized)
-			{
-				WindowState = FormWindowState.Normal;
-			}
-		}
-
-		private void MinimizePanel_Click(object sender, EventArgs e)
-		{
-			if (WindowState is FormWindowState.Normal)
-			{
-				WindowState = FormWindowState.Minimized;
-			}
-			else if (WindowState is FormWindowState.Minimized)
-			{
-				WindowState = FormWindowState.Normal;
-			}
 		}
 	}
 }

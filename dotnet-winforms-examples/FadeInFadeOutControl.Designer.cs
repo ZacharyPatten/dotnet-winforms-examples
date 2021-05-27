@@ -42,7 +42,7 @@ namespace dotnet_winforms_examples
 			this.label.Size = new System.Drawing.Size(169, 15);
 			this.label.TabIndex = 0;
 			this.label.Text = "Click Me! I will fade in and out!";
-			this.label.Click += new System.EventHandler(this.label_Click);
+			this.label.Click += new System.EventHandler(this.Label_Click);
 			// 
 			// FadeInFadeOutControl
 			// 

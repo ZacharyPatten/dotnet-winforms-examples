@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace dotnet_winforms_examples
 {
 	public partial class FadeInFadeOutControl : UserControl
 	{
-		Color originalColor;
+		readonly Color originalColor;
 
 		public FadeInFadeOutControl()
 		{
@@ -20,7 +14,7 @@ namespace dotnet_winforms_examples
 			originalColor = label.ForeColor;
 		}
 
-		private void label_Click(object sender, EventArgs e)
+		private void Label_Click(object sender, EventArgs e)
 		{
 			// Note: I should be using a Timer here instead of locking the UI thread, but this was
 			// just to demonstrate fade-in-fade-out, not using timers.

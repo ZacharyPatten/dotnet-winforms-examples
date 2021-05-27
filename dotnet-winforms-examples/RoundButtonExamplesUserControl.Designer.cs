@@ -52,7 +52,7 @@ namespace dotnet_winforms_examples
 			this.roundButton1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
 			this.roundButton1.TabIndex = 0;
 			this.roundButton1.Text = "roundButton1";
-			this.roundButton1.Click += new System.EventHandler(this.roundButton_Click);
+			this.roundButton1.Click += new System.EventHandler(this.RoundButton_Click);
 			// 
 			// roundButton2
 			// 
@@ -71,7 +71,7 @@ namespace dotnet_winforms_examples
 			this.roundButton2.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
 			this.roundButton2.TabIndex = 1;
 			this.roundButton2.Text = "roundButton2";
-			this.roundButton2.Click += new System.EventHandler(this.roundButton_Click);
+			this.roundButton2.Click += new System.EventHandler(this.RoundButton_Click);
 			// 
 			// roundButton3
 			// 
@@ -90,7 +90,7 @@ namespace dotnet_winforms_examples
 			this.roundButton3.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
 			this.roundButton3.TabIndex = 2;
 			this.roundButton3.Text = "roundButton3";
-			this.roundButton3.Click += new System.EventHandler(this.roundButton_Click);
+			this.roundButton3.Click += new System.EventHandler(this.RoundButton_Click);
 			// 
 			// label1
 			// 

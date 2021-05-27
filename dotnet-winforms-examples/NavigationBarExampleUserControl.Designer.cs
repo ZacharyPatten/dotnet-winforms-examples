@@ -50,6 +50,7 @@ namespace dotnet_winforms_examples
 			// 
 			// splitContainer1.Panel1
 			// 
+			this.splitContainer1.Panel1.AutoScroll = true;
 			this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDark;
 			this.splitContainer1.Panel1.Controls.Add(this.view3Button);
 			this.splitContainer1.Panel1.Controls.Add(this.view2Button);
@@ -78,7 +79,7 @@ namespace dotnet_winforms_examples
 			this.view3Button.TabIndex = 3;
 			this.view3Button.Text = "View 3";
 			this.view3Button.UseVisualStyleBackColor = false;
-			this.view3Button.Click += new System.EventHandler(this.button_Click);
+			this.view3Button.Click += new System.EventHandler(this.Button_Click);
 			// 
 			// homeButton
 			// 
@@ -93,7 +94,7 @@ namespace dotnet_winforms_examples
 			this.homeButton.TabIndex = 0;
 			this.homeButton.Text = "Home";
 			this.homeButton.UseVisualStyleBackColor = false;
-			this.homeButton.Click += new System.EventHandler(this.button_Click);
+			this.homeButton.Click += new System.EventHandler(this.Button_Click);
 			// 
 			// view2Button
 			// 
@@ -108,7 +109,7 @@ namespace dotnet_winforms_examples
 			this.view2Button.TabIndex = 2;
 			this.view2Button.Text = "View 2";
 			this.view2Button.UseVisualStyleBackColor = false;
-			this.view2Button.Click += new System.EventHandler(this.button_Click);
+			this.view2Button.Click += new System.EventHandler(this.Button_Click);
 			// 
 			// view1Button
 			// 
@@ -123,7 +124,7 @@ namespace dotnet_winforms_examples
 			this.view1Button.TabIndex = 1;
 			this.view1Button.Text = "View 1";
 			this.view1Button.UseVisualStyleBackColor = false;
-			this.view1Button.Click += new System.EventHandler(this.button_Click);
+			this.view1Button.Click += new System.EventHandler(this.Button_Click);
 			// 
 			// label1
 			// 

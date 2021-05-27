@@ -86,7 +86,7 @@ namespace dotnet_winforms_examples
 			timer.Enabled = true;
 		}
 
-		private Color GetRandomColor(Random random = null)
+		private static Color GetRandomColor(Random random = null)
 		{
 			random ??= new();
 			return Color.FromArgb(

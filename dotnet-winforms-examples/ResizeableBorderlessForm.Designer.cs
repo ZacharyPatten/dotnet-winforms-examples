@@ -48,9 +48,9 @@ namespace dotnet_winforms_examples
 			this.verticalResizePanel.Name = "verticalResizePanel";
 			this.verticalResizePanel.Size = new System.Drawing.Size(764, 30);
 			this.verticalResizePanel.TabIndex = 0;
-			this.verticalResizePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.resize_MouseDown);
-			this.verticalResizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.resize_MouseMove);
-			this.verticalResizePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.resize_MouseUp);
+			this.verticalResizePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseDown);
+			this.verticalResizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseMove);
+			this.verticalResizePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseUp);
 			// 
 			// resizePanel
 			// 
@@ -60,9 +60,9 @@ namespace dotnet_winforms_examples
 			this.resizePanel.Name = "resizePanel";
 			this.resizePanel.Size = new System.Drawing.Size(30, 30);
 			this.resizePanel.TabIndex = 1;
-			this.resizePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.resize_MouseDown);
-			this.resizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.resize_MouseMove);
-			this.resizePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.resize_MouseUp);
+			this.resizePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseDown);
+			this.resizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseMove);
+			this.resizePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseUp);
 			// 
 			// horizontalResizePanel
 			// 
@@ -73,9 +73,9 @@ namespace dotnet_winforms_examples
 			this.horizontalResizePanel.Name = "horizontalResizePanel";
 			this.horizontalResizePanel.Size = new System.Drawing.Size(30, 378);
 			this.horizontalResizePanel.TabIndex = 1;
-			this.horizontalResizePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.resize_MouseDown);
-			this.horizontalResizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.resize_MouseMove);
-			this.horizontalResizePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.resize_MouseUp);
+			this.horizontalResizePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseDown);
+			this.horizontalResizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseMove);
+			this.horizontalResizePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Resize_MouseUp);
 			// 
 			// movePanel
 			// 
@@ -86,9 +86,9 @@ namespace dotnet_winforms_examples
 			this.movePanel.Name = "movePanel";
 			this.movePanel.Size = new System.Drawing.Size(692, 30);
 			this.movePanel.TabIndex = 1;
-			this.movePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.move_MouseDown);
-			this.movePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.move_MouseMove);
-			this.movePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.move_MouseUp);
+			this.movePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Move_MouseDown);
+			this.movePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Move_MouseMove);
+			this.movePanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Move_MouseUp);
 			// 
 			// closePanel
 			// 
@@ -98,7 +98,7 @@ namespace dotnet_winforms_examples
 			this.closePanel.Name = "closePanel";
 			this.closePanel.Size = new System.Drawing.Size(30, 30);
 			this.closePanel.TabIndex = 1;
-			this.closePanel.Click += new System.EventHandler(this.closePanel_Click);
+			this.closePanel.Click += new System.EventHandler(this.ClosePanel_Click);
 			// 
 			// maximizePanel
 			// 
@@ -108,7 +108,7 @@ namespace dotnet_winforms_examples
 			this.maximizePanel.Name = "maximizePanel";
 			this.maximizePanel.Size = new System.Drawing.Size(30, 30);
 			this.maximizePanel.TabIndex = 1;
-			this.maximizePanel.Click += new System.EventHandler(this.maximizePanel_Click);
+			this.maximizePanel.Click += new System.EventHandler(this.MaximizePanel_Click);
 			// 
 			// minimizePanel
 			// 
@@ -118,7 +118,7 @@ namespace dotnet_winforms_examples
 			this.minimizePanel.Name = "minimizePanel";
 			this.minimizePanel.Size = new System.Drawing.Size(30, 30);
 			this.minimizePanel.TabIndex = 1;
-			this.minimizePanel.Click += new System.EventHandler(this.minimizePanel_Click);
+			this.minimizePanel.Click += new System.EventHandler(this.MinimizePanel_Click);
 			// 
 			// label1
 			// 
