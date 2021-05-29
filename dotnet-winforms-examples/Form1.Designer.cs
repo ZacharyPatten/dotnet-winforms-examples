@@ -34,7 +34,7 @@ namespace dotnet_winforms_examples
 			this.sliderPuzzleExampleButton = new System.Windows.Forms.Button();
 			this.fadeInFadeOutExampleButton = new System.Windows.Forms.Button();
 			this.collisionExampleButton = new System.Windows.Forms.Button();
-			this.buttonroundedButtonExampleButton = new System.Windows.Forms.Button();
+			this.customButtonExamplesButton = new System.Windows.Forms.Button();
 			this.navigationBarExampleButton = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
@@ -88,15 +88,15 @@ namespace dotnet_winforms_examples
 			this.collisionExampleButton.UseVisualStyleBackColor = true;
 			this.collisionExampleButton.Click += new System.EventHandler(this.CollisionExampleButton_Click);
 			// 
-			// buttonroundedButtonExampleButton
+			// customButtonExamplesButton
 			// 
-			this.buttonroundedButtonExampleButton.Location = new System.Drawing.Point(12, 143);
-			this.buttonroundedButtonExampleButton.Name = "buttonroundedButtonExampleButton";
-			this.buttonroundedButtonExampleButton.Size = new System.Drawing.Size(234, 23);
-			this.buttonroundedButtonExampleButton.TabIndex = 5;
-			this.buttonroundedButtonExampleButton.Text = "Rounded Button Example";
-			this.buttonroundedButtonExampleButton.UseVisualStyleBackColor = true;
-			this.buttonroundedButtonExampleButton.Click += new System.EventHandler(this.RoundButtonExampleButton_Click);
+			this.customButtonExamplesButton.Location = new System.Drawing.Point(12, 143);
+			this.customButtonExamplesButton.Name = "customButtonExamplesButton";
+			this.customButtonExamplesButton.Size = new System.Drawing.Size(234, 23);
+			this.customButtonExamplesButton.TabIndex = 5;
+			this.customButtonExamplesButton.Text = "Custom Button Examples";
+			this.customButtonExamplesButton.UseVisualStyleBackColor = true;
+			this.customButtonExamplesButton.Click += new System.EventHandler(this.CustomButtonExampleButton_Click);
 			// 
 			// navigationBarExampleButton
 			// 
@@ -125,7 +125,7 @@ namespace dotnet_winforms_examples
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.navigationBarExampleButton);
-			this.Controls.Add(this.buttonroundedButtonExampleButton);
+			this.Controls.Add(this.customButtonExamplesButton);
 			this.Controls.Add(this.collisionExampleButton);
 			this.Controls.Add(this.fadeInFadeOutExampleButton);
 			this.Controls.Add(this.sliderPuzzleExampleButton);
@@ -145,7 +145,7 @@ namespace dotnet_winforms_examples
 		private System.Windows.Forms.Button sliderPuzzleExampleButton;
 		private System.Windows.Forms.Button fadeInFadeOutExampleButton;
 		private System.Windows.Forms.Button collisionExampleButton;
-		private System.Windows.Forms.Button buttonroundedButtonExampleButton;
+		private System.Windows.Forms.Button customButtonExamplesButton;
 		private System.Windows.Forms.Button navigationBarExampleButton;
 		private System.Windows.Forms.Button button1;
 	}

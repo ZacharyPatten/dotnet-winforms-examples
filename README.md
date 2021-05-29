@@ -21,7 +21,9 @@
 - Sliding Puzzle Game
 - Borderless Window (Movable + Resizable + Minimizable + Maximizable)
 - 2D Circle Collision Detection Example
-- Round Buttons
+- Custom Buttons
+    - Circle Buttons
+    - Custom Bordered Buttons
 - Navigation Bar
 - Transparent Screen Selector
 

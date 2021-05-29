@@ -46,13 +46,15 @@ namespace dotnet_winforms_examples
 			form.Show();
 		}
 
-		private void RoundButtonExampleButton_Click(object sender, EventArgs e)
+		private void CustomButtonExampleButton_Click(object sender, EventArgs e)
 		{
 			Form form = new();
-			form.Text = "Round Button Examples";
-			RoundButtonExamplesUserControl roundButtonExamplesUserControl = new();
-			roundButtonExamplesUserControl.Dock = DockStyle.Fill;
-			form.Controls.Add(roundButtonExamplesUserControl);
+			form.Text = "Custom Button Examples";
+			CustomButtonExamplesUserControl customButtonExamplesUserControl = new();
+			form.Width = customButtonExamplesUserControl.Width;
+			form.Height = customButtonExamplesUserControl.Height;
+			customButtonExamplesUserControl.Dock = DockStyle.Fill;
+			form.Controls.Add(customButtonExamplesUserControl);
 			form.Show();
 		}
 
