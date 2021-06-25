@@ -64,6 +64,7 @@ namespace dotnet_winforms_examples
 			Timer timer = new();
 			DateTime start = DateTime.Now;
 			Size original = control.Size;
+			bool complete = false;
 			timer.Tick += (s, e) =>
 			{
 				DateTime now = DateTime.Now;
@@ -73,6 +74,7 @@ namespace dotnet_winforms_examples
 					control.Height = newSize.Height;
 					Clean();
 					callback?.Invoke();
+					complete = true;
 				}
 				else
 				{
@@ -89,8 +91,11 @@ namespace dotnet_winforms_examples
 			timer.Enabled = true;
 			void Clean()
 			{
-				timer.Enabled = false;
-				timer.Dispose();
+				if (!complete)
+				{
+					timer.Enabled = false;
+					timer.Dispose();
+				}
 			}
 			return Clean;
 		}
