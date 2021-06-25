@@ -60,6 +60,7 @@ namespace dotnet_winforms_examples
 				MessageBox.Show($"{nameof(newSize)}.{nameof(newSize.Width)} < 0");
 				return null;
 			}
+			interval = Math.Max(1, interval);
 			Timer timer = new();
 			DateTime start = DateTime.Now;
 			Size original = control.Size;
