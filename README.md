@@ -26,6 +26,7 @@
     - Custom Bordered Buttons
 - Navigation Bar
 - Transparent Screen Selector
+- Animated Control Resize Helper Method
 
 ## Getting Started
 

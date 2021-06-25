@@ -37,6 +37,7 @@ namespace dotnet_winforms_examples
 			this.customButtonExamplesButton = new System.Windows.Forms.Button();
 			this.navigationBarExampleButton = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
+			this.animatedControlResizeButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// resizeableBorderlessFormExampleButton
@@ -118,11 +119,22 @@ namespace dotnet_winforms_examples
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.TransparentScreenSelectorFormExampleButton_Click);
 			// 
+			// animatedControlResizeButton
+			// 
+			this.animatedControlResizeButton.Location = new System.Drawing.Point(12, 230);
+			this.animatedControlResizeButton.Name = "animatedControlResizeButton";
+			this.animatedControlResizeButton.Size = new System.Drawing.Size(234, 23);
+			this.animatedControlResizeButton.TabIndex = 8;
+			this.animatedControlResizeButton.Text = "Animated Control Resize";
+			this.animatedControlResizeButton.UseVisualStyleBackColor = true;
+			this.animatedControlResizeButton.Click += new System.EventHandler(this.AnimatedControlResizeButton_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.animatedControlResizeButton);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.navigationBarExampleButton);
 			this.Controls.Add(this.customButtonExamplesButton);
@@ -148,6 +160,7 @@ namespace dotnet_winforms_examples
 		private System.Windows.Forms.Button customButtonExamplesButton;
 		private System.Windows.Forms.Button navigationBarExampleButton;
 		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button animatedControlResizeButton;
 	}
 }
 

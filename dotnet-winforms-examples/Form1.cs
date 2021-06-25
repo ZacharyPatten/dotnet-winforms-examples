@@ -73,5 +73,15 @@ namespace dotnet_winforms_examples
 			TransparentScreenSelectorForm transparentScreenSelectorForm = new();
 			transparentScreenSelectorForm.Show();
 		}
+
+		private void AnimatedControlResizeButton_Click(object sender, EventArgs e)
+		{
+			Form form = new() { Width = Width, Height = Height };
+			form.Text = "Navigation Bar Example";
+			ResizeAnimationUserControl resizeAnimationUserControl = new();
+			resizeAnimationUserControl.Dock = DockStyle.Fill;
+			form.Controls.Add(resizeAnimationUserControl);
+			form.Show();
+		}
 	}
 }

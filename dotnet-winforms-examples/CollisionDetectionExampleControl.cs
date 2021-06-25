@@ -80,7 +80,6 @@ namespace dotnet_winforms_examples
 				}
 				previous = now;
 				ResumeLayout();
-				Refresh();
 			};
 			timer.Interval = 16;
 			timer.Enabled = true;
