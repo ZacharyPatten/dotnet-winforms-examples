@@ -18,6 +18,21 @@ namespace dotnet_winforms_examples
 			CancelAnimation?.Invoke();
 			Size size = new((int)widthSelector.Value, (int)heightSelector.Value);
 			TimeSpan duration = TimeSpan.FromMilliseconds((int)durationSelector.Value);
+			if (size.Height < 20 || size.Height > 1000)
+			{
+				MessageBox.Show("size.Height is outside the range 20-1000");
+				return;
+			}
+			if (size.Width < 20 || size.Width > 1000)
+			{
+				MessageBox.Show("Width is outside the range 20-1000");
+				return;
+			}
+			if (durationSelector.Value < 0 || durationSelector.Value > 10000)
+			{
+				MessageBox.Show("Duration is outside the range 0-10000");
+				return;
+			}
 			CancelAnimation = resizingButton.TryAnimateResize(size, duration, () => CancelAnimation = null);
 			widthSelector.Value = resizingButton.Width;
 			heightSelector.Value = resizingButton.Height;
@@ -35,14 +50,14 @@ namespace dotnet_winforms_examples
 		/// <returns>A cancelation delegate if the animation was started.</returns>
 		public static Action TryAnimateResize(this Control control, Size newSize, TimeSpan duration, Action callback = null, int interval = 1)
 		{
-			if (newSize.Height < 20 || newSize.Height > 1000)
+			if (newSize.Height < 0)
 			{
-				MessageBox.Show($"{nameof(newSize)}.{nameof(newSize.Height)}is outside the range 20-1000");
+				MessageBox.Show($"{nameof(newSize)}.{nameof(newSize.Height)} < 0");
 				return null;
 			}
-			if (newSize.Width < 20 || newSize.Width > 1000)
+			if (newSize.Width < 0)
 			{
-				MessageBox.Show($"{nameof(newSize)}.{nameof(newSize.Width)}is outside the range 20-1000");
+				MessageBox.Show($"{nameof(newSize)}.{nameof(newSize.Width)} < 0");
 				return null;
 			}
 			Timer timer = new();
