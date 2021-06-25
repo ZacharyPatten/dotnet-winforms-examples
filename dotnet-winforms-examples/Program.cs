@@ -5,9 +5,6 @@ namespace dotnet_winforms_examples
 {
 	static class Program
 	{
-		/// <summary>
-		///  The main entry point for the application.
-		/// </summary>
 		[STAThread]
 		static void Main()
 		{
