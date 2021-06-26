@@ -74,7 +74,6 @@ namespace dotnet_winforms_examples
 					control.Height = newSize.Height;
 					Clean();
 					callback?.Invoke();
-					complete = true;
 				}
 				else
 				{
@@ -95,6 +94,7 @@ namespace dotnet_winforms_examples
 				{
 					timer.Enabled = false;
 					timer.Dispose();
+					complete = true;
 				}
 			}
 			return Clean;
