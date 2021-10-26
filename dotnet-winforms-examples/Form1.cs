@@ -83,5 +83,15 @@ namespace dotnet_winforms_examples
 			form.Controls.Add(resizeAnimationUserControl);
 			form.Show();
 		}
+
+		private void panelsWithRoundedCornersButton_Click(object sender, EventArgs e)
+		{
+			Form form = new();
+			form.Text = "Panels With Rounded Corners";
+			PanelWithRoundedCornersUserControl panelWithRoundedCornersUserControl = new();
+			form.ClientSize = panelWithRoundedCornersUserControl.ClientSize;
+			form.Controls.Add(panelWithRoundedCornersUserControl);
+			form.Show();
+		}
 	}
 }
