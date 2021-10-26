@@ -30,12 +30,12 @@ namespace dotnet_winforms_examples
 		private void InitializeComponent()
 		{
 			this.panelWithRoundedCorners1 = new dotnet_winforms_examples.PanelWithRoundedCorners();
-			this.panelWithRoundedCorners2 = new dotnet_winforms_examples.PanelWithRoundedCorners();
-			this.panelWithRoundedCorners3 = new dotnet_winforms_examples.PanelWithRoundedCorners();
-			this.panelWithRoundedCorners4 = new dotnet_winforms_examples.PanelWithRoundedCorners();
 			this.label1 = new System.Windows.Forms.Label();
+			this.panelWithRoundedCorners2 = new dotnet_winforms_examples.PanelWithRoundedCorners();
 			this.label2 = new System.Windows.Forms.Label();
+			this.panelWithRoundedCorners3 = new dotnet_winforms_examples.PanelWithRoundedCorners();
 			this.label3 = new System.Windows.Forms.Label();
+			this.panelWithRoundedCorners4 = new dotnet_winforms_examples.PanelWithRoundedCorners();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.panelWithRoundedCorners1.SuspendLayout();
@@ -54,6 +54,15 @@ namespace dotnet_winforms_examples
 			this.panelWithRoundedCorners1.Size = new System.Drawing.Size(200, 100);
 			this.panelWithRoundedCorners1.TabIndex = 0;
 			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(48, 42);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(104, 15);
+			this.label1.TabIndex = 4;
+			this.label1.Text = "CornerRadius = 10";
+			// 
 			// panelWithRoundedCorners2
 			// 
 			this.panelWithRoundedCorners2.BackColor = System.Drawing.Color.OliveDrab;
@@ -63,6 +72,15 @@ namespace dotnet_winforms_examples
 			this.panelWithRoundedCorners2.Name = "panelWithRoundedCorners2";
 			this.panelWithRoundedCorners2.Size = new System.Drawing.Size(200, 100);
 			this.panelWithRoundedCorners2.TabIndex = 1;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(49, 42);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(104, 15);
+			this.label2.TabIndex = 5;
+			this.label2.Text = "CornerRadius = 20";
 			// 
 			// panelWithRoundedCorners3
 			// 
@@ -74,34 +92,6 @@ namespace dotnet_winforms_examples
 			this.panelWithRoundedCorners3.Size = new System.Drawing.Size(200, 100);
 			this.panelWithRoundedCorners3.TabIndex = 2;
 			// 
-			// panelWithRoundedCorners4
-			// 
-			this.panelWithRoundedCorners4.BackColor = System.Drawing.Color.DarkCyan;
-			this.panelWithRoundedCorners4.Controls.Add(this.label4);
-			this.panelWithRoundedCorners4.CornerRadius = 100;
-			this.panelWithRoundedCorners4.Location = new System.Drawing.Point(270, 151);
-			this.panelWithRoundedCorners4.Name = "panelWithRoundedCorners4";
-			this.panelWithRoundedCorners4.Size = new System.Drawing.Size(200, 100);
-			this.panelWithRoundedCorners4.TabIndex = 3;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(48, 42);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(104, 15);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "CornerRadius = 10";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(49, 42);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(104, 15);
-			this.label2.TabIndex = 5;
-			this.label2.Text = "CornerRadius = 20";
-			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -110,6 +100,16 @@ namespace dotnet_winforms_examples
 			this.label3.Size = new System.Drawing.Size(104, 15);
 			this.label3.TabIndex = 6;
 			this.label3.Text = "CornerRadius = 50";
+			// 
+			// panelWithRoundedCorners4
+			// 
+			this.panelWithRoundedCorners4.BackColor = System.Drawing.Color.SlateGray;
+			this.panelWithRoundedCorners4.Controls.Add(this.label4);
+			this.panelWithRoundedCorners4.CornerRadius = 100;
+			this.panelWithRoundedCorners4.Location = new System.Drawing.Point(270, 151);
+			this.panelWithRoundedCorners4.Name = "panelWithRoundedCorners4";
+			this.panelWithRoundedCorners4.Size = new System.Drawing.Size(200, 100);
+			this.panelWithRoundedCorners4.TabIndex = 3;
 			// 
 			// label4
 			// 
