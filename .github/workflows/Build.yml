@@ -1,11 +1,11 @@
 name: Build
 on:
   push:
-    paths:
-    - '!**.md'
+    paths-ignore:
+    - '**.md'
   pull_request:
-    paths:
-    - '!**.md'
+    paths-ignore:
+    - '**.md'
   workflow_dispatch:
 jobs:
   build:
