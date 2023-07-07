@@ -29,137 +29,148 @@ namespace dotnet_winforms_examples
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.resizeableBorderlessFormExampleButton = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.sliderPuzzleExampleButton = new System.Windows.Forms.Button();
-			this.fadeInFadeOutExampleButton = new System.Windows.Forms.Button();
-			this.collisionExampleButton = new System.Windows.Forms.Button();
-			this.customButtonExamplesButton = new System.Windows.Forms.Button();
-			this.navigationBarExampleButton = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.animatedControlResizeButton = new System.Windows.Forms.Button();
-			this.panelsWithRoundedCornersButton = new System.Windows.Forms.Button();
-			this.SuspendLayout();
+			resizeableBorderlessFormExampleButton = new System.Windows.Forms.Button();
+			label1 = new System.Windows.Forms.Label();
+			sliderPuzzleExampleButton = new System.Windows.Forms.Button();
+			fadeInFadeOutExampleButton = new System.Windows.Forms.Button();
+			collisionExampleButton = new System.Windows.Forms.Button();
+			customButtonExamplesButton = new System.Windows.Forms.Button();
+			navigationBarExampleButton = new System.Windows.Forms.Button();
+			button1 = new System.Windows.Forms.Button();
+			animatedControlResizeButton = new System.Windows.Forms.Button();
+			panelsWithRoundedCornersButton = new System.Windows.Forms.Button();
+			animatedLogoOnLaunchButton = new System.Windows.Forms.Button();
+			SuspendLayout();
 			// 
 			// resizeableBorderlessFormExampleButton
 			// 
-			this.resizeableBorderlessFormExampleButton.Location = new System.Drawing.Point(12, 27);
-			this.resizeableBorderlessFormExampleButton.Name = "resizeableBorderlessFormExampleButton";
-			this.resizeableBorderlessFormExampleButton.Size = new System.Drawing.Size(234, 23);
-			this.resizeableBorderlessFormExampleButton.TabIndex = 0;
-			this.resizeableBorderlessFormExampleButton.Text = "Resizeable Borderless Form Example";
-			this.resizeableBorderlessFormExampleButton.UseVisualStyleBackColor = true;
-			this.resizeableBorderlessFormExampleButton.Click += new System.EventHandler(this.ResizeableBorderlessFormExampleButton_Click);
+			resizeableBorderlessFormExampleButton.Location = new System.Drawing.Point(12, 27);
+			resizeableBorderlessFormExampleButton.Name = "resizeableBorderlessFormExampleButton";
+			resizeableBorderlessFormExampleButton.Size = new System.Drawing.Size(234, 23);
+			resizeableBorderlessFormExampleButton.TabIndex = 0;
+			resizeableBorderlessFormExampleButton.Text = "Resizeable Borderless Form Example";
+			resizeableBorderlessFormExampleButton.UseVisualStyleBackColor = true;
+			resizeableBorderlessFormExampleButton.Click += ResizeableBorderlessFormExampleButton_Click;
 			// 
 			// label1
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(12, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(60, 15);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Examples:";
+			label1.AutoSize = true;
+			label1.Location = new System.Drawing.Point(12, 9);
+			label1.Name = "label1";
+			label1.Size = new System.Drawing.Size(60, 15);
+			label1.TabIndex = 1;
+			label1.Text = "Examples:";
 			// 
 			// sliderPuzzleExampleButton
 			// 
-			this.sliderPuzzleExampleButton.Location = new System.Drawing.Point(12, 56);
-			this.sliderPuzzleExampleButton.Name = "sliderPuzzleExampleButton";
-			this.sliderPuzzleExampleButton.Size = new System.Drawing.Size(234, 23);
-			this.sliderPuzzleExampleButton.TabIndex = 2;
-			this.sliderPuzzleExampleButton.Text = "Slider Puzzle Example";
-			this.sliderPuzzleExampleButton.UseVisualStyleBackColor = true;
-			this.sliderPuzzleExampleButton.Click += new System.EventHandler(this.SliderPuzzleExampleButton_Click);
+			sliderPuzzleExampleButton.Location = new System.Drawing.Point(12, 56);
+			sliderPuzzleExampleButton.Name = "sliderPuzzleExampleButton";
+			sliderPuzzleExampleButton.Size = new System.Drawing.Size(234, 23);
+			sliderPuzzleExampleButton.TabIndex = 2;
+			sliderPuzzleExampleButton.Text = "Slider Puzzle Example";
+			sliderPuzzleExampleButton.UseVisualStyleBackColor = true;
+			sliderPuzzleExampleButton.Click += SliderPuzzleExampleButton_Click;
 			// 
 			// fadeInFadeOutExampleButton
 			// 
-			this.fadeInFadeOutExampleButton.Location = new System.Drawing.Point(12, 85);
-			this.fadeInFadeOutExampleButton.Name = "fadeInFadeOutExampleButton";
-			this.fadeInFadeOutExampleButton.Size = new System.Drawing.Size(234, 23);
-			this.fadeInFadeOutExampleButton.TabIndex = 3;
-			this.fadeInFadeOutExampleButton.Text = "Fade In Fade Out Example";
-			this.fadeInFadeOutExampleButton.UseVisualStyleBackColor = true;
-			this.fadeInFadeOutExampleButton.Click += new System.EventHandler(this.FadeInFadeOutExampleButton_Click);
+			fadeInFadeOutExampleButton.Location = new System.Drawing.Point(12, 85);
+			fadeInFadeOutExampleButton.Name = "fadeInFadeOutExampleButton";
+			fadeInFadeOutExampleButton.Size = new System.Drawing.Size(234, 23);
+			fadeInFadeOutExampleButton.TabIndex = 3;
+			fadeInFadeOutExampleButton.Text = "Fade In Fade Out Example";
+			fadeInFadeOutExampleButton.UseVisualStyleBackColor = true;
+			fadeInFadeOutExampleButton.Click += FadeInFadeOutExampleButton_Click;
 			// 
 			// collisionExampleButton
 			// 
-			this.collisionExampleButton.Location = new System.Drawing.Point(12, 114);
-			this.collisionExampleButton.Name = "collisionExampleButton";
-			this.collisionExampleButton.Size = new System.Drawing.Size(234, 23);
-			this.collisionExampleButton.TabIndex = 4;
-			this.collisionExampleButton.Text = "2D Collision Example";
-			this.collisionExampleButton.UseVisualStyleBackColor = true;
-			this.collisionExampleButton.Click += new System.EventHandler(this.CollisionExampleButton_Click);
+			collisionExampleButton.Location = new System.Drawing.Point(12, 114);
+			collisionExampleButton.Name = "collisionExampleButton";
+			collisionExampleButton.Size = new System.Drawing.Size(234, 23);
+			collisionExampleButton.TabIndex = 4;
+			collisionExampleButton.Text = "2D Collision Example";
+			collisionExampleButton.UseVisualStyleBackColor = true;
+			collisionExampleButton.Click += CollisionExampleButton_Click;
 			// 
 			// customButtonExamplesButton
 			// 
-			this.customButtonExamplesButton.Location = new System.Drawing.Point(12, 143);
-			this.customButtonExamplesButton.Name = "customButtonExamplesButton";
-			this.customButtonExamplesButton.Size = new System.Drawing.Size(234, 23);
-			this.customButtonExamplesButton.TabIndex = 5;
-			this.customButtonExamplesButton.Text = "Custom Button Examples";
-			this.customButtonExamplesButton.UseVisualStyleBackColor = true;
-			this.customButtonExamplesButton.Click += new System.EventHandler(this.CustomButtonExampleButton_Click);
+			customButtonExamplesButton.Location = new System.Drawing.Point(12, 143);
+			customButtonExamplesButton.Name = "customButtonExamplesButton";
+			customButtonExamplesButton.Size = new System.Drawing.Size(234, 23);
+			customButtonExamplesButton.TabIndex = 5;
+			customButtonExamplesButton.Text = "Custom Button Examples";
+			customButtonExamplesButton.UseVisualStyleBackColor = true;
+			customButtonExamplesButton.Click += CustomButtonExampleButton_Click;
 			// 
 			// navigationBarExampleButton
 			// 
-			this.navigationBarExampleButton.Location = new System.Drawing.Point(12, 172);
-			this.navigationBarExampleButton.Name = "navigationBarExampleButton";
-			this.navigationBarExampleButton.Size = new System.Drawing.Size(234, 23);
-			this.navigationBarExampleButton.TabIndex = 6;
-			this.navigationBarExampleButton.Text = "Navigation Bar Example";
-			this.navigationBarExampleButton.UseVisualStyleBackColor = true;
-			this.navigationBarExampleButton.Click += new System.EventHandler(this.NavigationBarExampleButton_Click);
+			navigationBarExampleButton.Location = new System.Drawing.Point(12, 172);
+			navigationBarExampleButton.Name = "navigationBarExampleButton";
+			navigationBarExampleButton.Size = new System.Drawing.Size(234, 23);
+			navigationBarExampleButton.TabIndex = 6;
+			navigationBarExampleButton.Text = "Navigation Bar Example";
+			navigationBarExampleButton.UseVisualStyleBackColor = true;
+			navigationBarExampleButton.Click += NavigationBarExampleButton_Click;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(12, 201);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(234, 23);
-			this.button1.TabIndex = 7;
-			this.button1.Text = "Transparent Screen Selector Form Example";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.TransparentScreenSelectorFormExampleButton_Click);
+			button1.Location = new System.Drawing.Point(12, 201);
+			button1.Name = "button1";
+			button1.Size = new System.Drawing.Size(234, 23);
+			button1.TabIndex = 7;
+			button1.Text = "Transparent Screen Selector Form Example";
+			button1.UseVisualStyleBackColor = true;
+			button1.Click += TransparentScreenSelectorFormExampleButton_Click;
 			// 
 			// animatedControlResizeButton
 			// 
-			this.animatedControlResizeButton.Location = new System.Drawing.Point(12, 230);
-			this.animatedControlResizeButton.Name = "animatedControlResizeButton";
-			this.animatedControlResizeButton.Size = new System.Drawing.Size(234, 23);
-			this.animatedControlResizeButton.TabIndex = 8;
-			this.animatedControlResizeButton.Text = "Animated Control Resize";
-			this.animatedControlResizeButton.UseVisualStyleBackColor = true;
-			this.animatedControlResizeButton.Click += new System.EventHandler(this.AnimatedControlResizeButton_Click);
+			animatedControlResizeButton.Location = new System.Drawing.Point(12, 230);
+			animatedControlResizeButton.Name = "animatedControlResizeButton";
+			animatedControlResizeButton.Size = new System.Drawing.Size(234, 23);
+			animatedControlResizeButton.TabIndex = 8;
+			animatedControlResizeButton.Text = "Animated Control Resize";
+			animatedControlResizeButton.UseVisualStyleBackColor = true;
+			animatedControlResizeButton.Click += AnimatedControlResizeButton_Click;
 			// 
 			// panelsWithRoundedCornersButton
 			// 
-			this.panelsWithRoundedCornersButton.Location = new System.Drawing.Point(12, 259);
-			this.panelsWithRoundedCornersButton.Name = "panelsWithRoundedCornersButton";
-			this.panelsWithRoundedCornersButton.Size = new System.Drawing.Size(234, 23);
-			this.panelsWithRoundedCornersButton.TabIndex = 9;
-			this.panelsWithRoundedCornersButton.Text = "Panels With Rounded Corners";
-			this.panelsWithRoundedCornersButton.UseVisualStyleBackColor = true;
-			this.panelsWithRoundedCornersButton.Click += new System.EventHandler(this.panelsWithRoundedCornersButton_Click);
+			panelsWithRoundedCornersButton.Location = new System.Drawing.Point(12, 259);
+			panelsWithRoundedCornersButton.Name = "panelsWithRoundedCornersButton";
+			panelsWithRoundedCornersButton.Size = new System.Drawing.Size(234, 23);
+			panelsWithRoundedCornersButton.TabIndex = 9;
+			panelsWithRoundedCornersButton.Text = "Panels With Rounded Corners";
+			panelsWithRoundedCornersButton.UseVisualStyleBackColor = true;
+			panelsWithRoundedCornersButton.Click += panelsWithRoundedCornersButton_Click;
+			// 
+			// animatedLogoOnLaunchButton
+			// 
+			animatedLogoOnLaunchButton.Location = new System.Drawing.Point(12, 288);
+			animatedLogoOnLaunchButton.Name = "animatedLogoOnLaunchButton";
+			animatedLogoOnLaunchButton.Size = new System.Drawing.Size(234, 23);
+			animatedLogoOnLaunchButton.TabIndex = 10;
+			animatedLogoOnLaunchButton.Text = "Animated Logo On Launch";
+			animatedLogoOnLaunchButton.UseVisualStyleBackColor = true;
+			animatedLogoOnLaunchButton.Click += animatedLogoOnLaunchButton_Click;
 			// 
 			// Form1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(552, 450);
-			this.Controls.Add(this.panelsWithRoundedCornersButton);
-			this.Controls.Add(this.animatedControlResizeButton);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.navigationBarExampleButton);
-			this.Controls.Add(this.customButtonExamplesButton);
-			this.Controls.Add(this.collisionExampleButton);
-			this.Controls.Add(this.fadeInFadeOutExampleButton);
-			this.Controls.Add(this.sliderPuzzleExampleButton);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.resizeableBorderlessFormExampleButton);
-			this.Name = "Form1";
-			this.Text = "Form1";
-			this.ResumeLayout(false);
-			this.PerformLayout();
-
+			AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			ClientSize = new System.Drawing.Size(552, 450);
+			Controls.Add(animatedLogoOnLaunchButton);
+			Controls.Add(panelsWithRoundedCornersButton);
+			Controls.Add(animatedControlResizeButton);
+			Controls.Add(button1);
+			Controls.Add(navigationBarExampleButton);
+			Controls.Add(customButtonExamplesButton);
+			Controls.Add(collisionExampleButton);
+			Controls.Add(fadeInFadeOutExampleButton);
+			Controls.Add(sliderPuzzleExampleButton);
+			Controls.Add(label1);
+			Controls.Add(resizeableBorderlessFormExampleButton);
+			Name = "Form1";
+			Text = "Form1";
+			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion
@@ -174,6 +185,7 @@ namespace dotnet_winforms_examples
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button animatedControlResizeButton;
 		private System.Windows.Forms.Button panelsWithRoundedCornersButton;
+		private System.Windows.Forms.Button animatedLogoOnLaunchButton;
 	}
 }
 

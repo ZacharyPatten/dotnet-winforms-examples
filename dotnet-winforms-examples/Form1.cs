@@ -93,5 +93,11 @@ namespace dotnet_winforms_examples
 			form.Controls.Add(panelWithRoundedCornersUserControl);
 			form.Show();
 		}
+
+		private void animatedLogoOnLaunchButton_Click(object sender, EventArgs e)
+		{
+			Form form = new AnimatedLogoForm();
+			form.Show();
+		}
 	}
 }
