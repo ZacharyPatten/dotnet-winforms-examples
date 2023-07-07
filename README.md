@@ -28,6 +28,7 @@
 - Navigation Bar
 - Transparent Screen Selector
 - Animated Control Resize Helper Method
+- Animated Logo On Launch (gif image)
 
 ## Getting Started
 
